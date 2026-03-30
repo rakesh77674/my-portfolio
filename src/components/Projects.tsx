@@ -1,59 +1,41 @@
-import { motion } from 'framer-motion';
+import React from 'react';
+// Import your actual project screenshots here
+// import healthProject from '../assets/health-analysis.png';
 
-const projects = [
-  {
-    title: "Health Insurance Analysis",
-    desc: "Exploratory Data Analysis (EDA) on insurance premiums to identify key cost drivers using Python.",
-    tools: ["Python", "Pandas", "Seaborn", "Scikit-Learn"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "Sales Performance Dashboard",
-    desc: "Interactive Power BI dashboard visualizing regional sales trends and KPI achievement.",
-    tools: ["Power BI", "DAX", "SQL"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "SQL Operations Database",
-    desc: "Database schema design and complex query optimization for a retail inventory system.",
-    tools: ["PostgreSQL", "Data Modeling"],
-    github: "#",
-    demo: "#"
-  }
-];
+const Projects: React.FC = () => {
+  const projectList = [
+    {
+      title: "Health Insurance Analysis",
+      description: "My personal healthcare project I made in 2026.",
+      link: "#",
+      image: "https://via.placeholder.com/600x400" // Replace with your imported image
+    },
+    {
+      title: "Data Visualization Terminal",
+      description: "A dashboard for tracking clinical metrics and patient outcomes.",
+      link: "#",
+      image: "https://via.placeholder.com/600x400"
+    }
+  ];
 
-const Projects = () => {
   return (
-    <section id="projects" className="py-20">
-      <h2 className="text-3xl font-bold mb-12 flex items-center">
-        <span className="text-blue-600 mr-2">02.</span> Featured Projects
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
-          <motion.div 
-            key={index}
-            whileHover={{ y: -10 }}
-            className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700"
-          >
-            <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-4 text-sm leading-relaxed">
-              {project.desc}
-            </p>
-            <div className="flex flex-wrap gap-2 mb-6">
-              {project.tools.map(tool => (
-                <span key={tool} className="text-xs font-mono px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded">
-                  {tool}
-                </span>
-              ))}
+    <section id="projects" className="projects-section">
+      <div className="projects-grid">
+        {projectList.map((project, index) => (
+          <div className="project-card" key={index}>
+            <div className="project-image-container">
+              <img src={project.image} alt={project.title} />
             </div>
-            <div className="flex gap-4">
-              <a href={project.github} className="text-sm font-bold hover:text-blue-500 underline">GitHub</a>
-              <a href={project.demo} className="text-sm font-bold hover:text-blue-500 underline">Live Demo</a>
-            </div>
-          </motion.div>
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-desc">{project.description}</p>
+            <a href={project.link} className="view-project-link">View Project →</a>
+          </div>
         ))}
+      </div>
+
+      <div className="more-projects-footer">
+        <h3>Want to See More?</h3>
+        <a href="https://github.com/rakesh" className="view-project-link">View All Projects →</a>
       </div>
     </section>
   );

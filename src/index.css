@@ -160,7 +160,7 @@ a {
 /* 2. The Signature Style */
 .signature-logo {
   font-family: 'Mr Dafoe', cursive;
-  font-size: 3rem; /* Cursive looks better when it's large */
+  font-size: 2rem; /* Cursive looks better when it's large */
   color: #71d4ff; /* The Niraj-style light blue */
   font-weight: 400;
   letter-spacing: 1px;
@@ -181,4 +181,299 @@ a {
   color: #ffffff;
   transform: rotate(0deg) scale(1.1);
   text-shadow: 0 0 15px rgba(113, 212, 255, 0.6);
+}
+/* ABOUT AREA */
+/* ABOUT SECTION LAYOUT */
+.about-section {
+  display: flex;
+  padding: 100px 10%;
+  background-color: #111111; /* Match the dark theme */
+  min-height: 80vh;
+  align-items: center;
+}
+
+/* Vertical Text on the Left */
+.vertical-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #ffeb3b; /* Yellow accent like the image */
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border-right: 1px solid #333;
+  padding: 20px 0;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+/* Content Area */
+.about-content {
+  max-width: 800px;
+}
+
+.about-header {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.about-header span {
+  color: #ff7043; /* Orange/Coral accent for "ready to work" */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #888888;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-description strong {
+  color: #ffffff;
+}
+
+.about-link {
+  color: #71d4ff;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid #71d4ff;
+  padding-bottom: 5px;
+}
+
+/* Projects Section */
+/* PROJECT SECTION STYLES */
+.projects-section {
+  padding: 100px 10%;
+  background-color: #111111;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Side-by-side layout */
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.project-card {
+  margin-bottom: 40px;
+}
+
+/* Image styling like the screenshot */
+.project-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+  border: 1px solid #333;
+}
+
+.project-card:hover .project-image-container {
+  transform: translateY(-10px);
+  border-color: #e91e63; /* Pink highlight on hover */
+}
+
+.project-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Typography matching the image */
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  color: #e91e63; /* Pink color from Niraj's site */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.view-project-link {
+  color: #71d4ff;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid #71d4ff;
+  padding-bottom: 2px;
+  transition: 0.3s;
+}
+
+.view-project-link:hover {
+  color: white;
+  border-color: white;
+}
+
+/* Footer "Want to See More?" Section */
+.more-projects-footer {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.more-projects-footer h3 {
+  font-family: 'Mr Dafoe', cursive; /* Using your unique signature font */
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+/* Skills Section */
+/* SKILLS SECTION */
+.skills-section {
+  padding: 100px 10%;
+  background-color: #111111;
+}
+
+.skills-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* The Pink Glow on Hover */
+.skill-card:hover {
+  transform: translateY(-10px);
+  border-color: #e91e63;
+  box-shadow: 0 10px 30px rgba(233, 30, 99, 0.1);
+}
+
+.skill-category-title {
+  font-family: 'Poppins', sans-serif;
+  color: #e91e63; /* Pink accent */
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.skill-item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item-list li {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* The little arrow before the skill */
+.skill-item-list li::before {
+  content: "▹";
+  color: #71d4ff; /* Blue accent */
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+/* Footer Section */
+/* FOOTER STYLES */
+.footer-section {
+  padding: 80px 10% 40px;
+  background-color: #111111;
+  border-top: 1px solid #222;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.collab-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.collab-text span {
+  font-family: 'Mr Dafoe', cursive; /* Your cursive font */
+  color: #ff7043; /* Coral accent */
+  font-size: 3rem;
+  margin-left: 10px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #71d4ff;
+}
+
+/* GO NORTH BUTTON */
+.go-north {
+  border: 1px solid white;
+  padding: 12px 24px;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.go-north:hover {
+  background: white;
+  color: black;
+}
+
+.attributions {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  text-align: right;
+  font-size: 0.7rem;
+  color: #444;
+  line-height: 1.4;
 }
