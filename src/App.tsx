@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Social from './components/Social';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -24,6 +25,7 @@ const App = () => {
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <Hero />
           <About />
+          <Social />
           <Skills />
           <Projects />
         </main>

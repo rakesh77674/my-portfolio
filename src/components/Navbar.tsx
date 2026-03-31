@@ -14,7 +14,13 @@ const Navbar: React.FC = () => {
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#skills">SKILLS</a></li>
         </ul>
-        <button className="download-cv-btn">DOWNLOAD CV</button>
+        <a 
+          href="/Rakesh_Chaudhary_Resume.docx" 
+          download="Rakesh_Chaudhary_Resume.docx" 
+          className="download-cv-btn"
+        >
+          DOWNLOAD CV
+        </a>
       </div>
     </nav>
   );

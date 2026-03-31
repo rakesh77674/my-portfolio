@@ -5,16 +5,16 @@ import React from 'react';
 const Projects: React.FC = () => {
   const projectList = [
     {
-      title: "Health Insurance Analysis",
+      title: "Health Cost Insurance Analysis",
       description: "My personal healthcare project I made in 2026.",
-      link: "#",
-      image: "https://via.placeholder.com/600x400" // Replace with your imported image
+      link: "https://github.com/rakesh77674/Insurance_cost_Analysis",
+      image: "https://imgs.search.brave.com/zuH5ZOf8W2mBOPAmc8MfFoajjAKRKy-HHRdUCotUbNM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mYWly/Y2FyZWluc3VyYW5j/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjUvMDEvSGVh/bHRoLUluc3VyYW5j/ZS1Db3N0LWluLUZs/b3JpZGEtMTAyNHg2/ODMuanBn" 
     },
     {
-      title: "Data Visualization Terminal",
-      description: "A dashboard for tracking clinical metrics and patient outcomes.",
-      link: "#",
-      image: "https://via.placeholder.com/600x400"
+      title: "Gym Management System",
+      description: "End-to-end Gym Management Data Platform featuring OLTP database design.",
+      link: "https://github.com/rakesh77674/gym-analytics-data-warehouse",
+      image: "https://imgs.search.brave.com/LI9yAuzFK3Iy-M75VWdYoHMcQ9BFFBalTf6Zc6bQxCo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zcGFy/a21lbWJlcnNoaXAu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA0L0d5bS1N/YW5hZ2VtZW50LVN5/c3RlbS1JZGVhcy5w/bmc"
     }
   ];
 
@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
 
       <div className="more-projects-footer">
         <h3>Want to See More?</h3>
-        <a href="https://github.com/rakesh" className="view-project-link">View All Projects →</a>
+        <a href="https://github.com/rakesh77674?tab=repositories" className="view-project-link">View All Projects →</a>
       </div>
     </section>
   );

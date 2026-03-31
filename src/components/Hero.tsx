@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       <h2>HEALTHCARE AND</h2>
       <h2 className="highlight-pink">BUSINESS INTELLIGENCE</h2>
     </section>
+    
   );
 };
-
 export default Hero;

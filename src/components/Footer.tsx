@@ -7,11 +7,6 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer-section">
-      {/* 1. Attributions (The tiny text in the top right) */}
-      <div className="attributions">
-        Created by Rakesh Chaudhary<br />
-        Built with React & Custom CSS<br />
-      </div>
 
       {/* 2. Main Contact Area */}
       <div>
@@ -29,7 +24,7 @@ const Footer: React.FC = () => {
 
           <div style={{ marginTop: '20px' }}>
             <p style={{ fontSize: '0.7rem', letterSpacing: '2px' }}>EMAIL</p>
-            <p style={{ color: 'white' }}>rakesh.data@example.com</p>
+            <p style={{ color: 'white' }}>rakeshchaudhary7897@gmail.com</p>
           </div>
         </div>
       </div>
